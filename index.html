@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a href="#" class="logo">
+        <img src="https://scontent.fblr25-1.fna.fbcdn.net/v/t39.30808-1/304930495_104086762447112_1834105276057685322_n.png?stp=dst-png_p200x200&_nc_cat=110&ccb=1-7&_nc_sid=754033&_nc_ohc=myxVIjd79osAX8Yqx8X&_nc_ht=scontent.fblr25-1.fna&oh=00_AfDW-u2XCQyzDNgZ1RAB54GuUbHnV_QO6hmCL696yL2uYA&oe=65206E4B">
+      </a>
+      <div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#shopping">Shopping</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="tel:+918008457750">Contact</a></li>
+          <i class="fa fa-times hii" aria-hidden="true" style="color:rgba(117,48,22,255);"></i>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+        <i class="fa fa-bars" aria-hidden="true" style="color:rgba(117,48,22,255);"></i>
+      </div>
+      
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+<!--
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+        </div>
+        
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+
+      <button class="btn-buy">Place Order</button>
+
+      <ion-icon name="close" id="cart-close"></ion-icon>
+
+      </div>
+    </div>
+  </header>
+  <div id="header">
+    <img class="design" src="./images/LN-WEBSITE 1_page-0001.jpg" alt="image">
+     <img class="home-img" src="./images/Purple lahenga.jpeg"/> 
+  </div>
+  <div class="image-text bg_theme">
+  <div class="container1 av-style">
+    <img src="./images/LN-WEBSITE 3_page-0001.jpg"/>
+    <!--<div class="row">
+      <div class="col-5">
+          <div class="text-block">
+             <h2>About us</h2>
+             <p>In the heart of Ladakh, where the heavens seem to embrace the earth, a celestial tapestry of fashion unfolds. Embrace on a journey of divine elegance as Ladakh’s mystique inspired collection adored with embellishment, crystals and sequins captures the raw allure of land as we weave intricate threads of culture and style together.</p>
+          </div>
+      </div>
+      <div class="col-7" style="padding-top:50px;">
+          <div class="row">
+              <div class="col-6">
+                 <div class="res-img res-50">
+                     <img src="./images/s(11).jpg"/>
+                 </div>
+              </div>
+              <div class="col-6 d">
+                 <div class="res-img">
+                     <img src="./images/s(10).jpg"/>
+                 </div>
+                 <div class="res-img">
+                     <img src="./images/s(1).jpg"/>
+                 </div>
+              </div>
+          </div>
+      </div>
+    </div>-->
+  </div>
+</div>
+  <!--<div class="images">
+    <div class="images1">
+      <h2>About us</h2>
+      <p>In the heart of Ladakh, where the heavens seem to embrace the earth, a celestial tapestry of fashion unfolds. Embrace on a journey of divine elegance as Ladakh’s mystique inspired collection adored with embellishment, crystals and sequins captures the raw allure of land as we weave intricate threads of culture and style together.</p>
+    </div>
+    <div class="images2">
+      <div class="image21">
+        <img src="./images/s(11).jpg"/>
+      </div>
+      <div>
+        <img src="./images/s(10).jpg"/>
+        <img src="./images/s(1).jpg"/>
+      </div>
+    </div>
+  </div>-->
+  <div class="container">
+    <h2 class="title" id="shopping">Shopping</h2>
+    <div class="r"></div>
+    <div class="shop-content">
+
+
+      <div class="food-box">
+        <div class="pic">
+          <img src="./images/s2 (1).jpg" class="food-img">
+        </div>
+        <h2 class="food-title">Shirt0</h2>
+        <span class="food-price">Rs.9990</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+
+
+      <div class="food-box">
+        <div class="pic"><img src="./images/s3 (3).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt1</h2>
+        <span class="food-price">Rs.65000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s8 (7).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt2</h2>
+        <span class="food-price">Rs.8090</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s(4).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt3</h2>
+        <span class="food-price">Rs.55000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s(1).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt4</h2>
+        <span class="food-price">Rs.25000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s5 (2).jpg" class="food-img"></div>
+        <h2 class="food-title">Kadai Fry</h2>
+        <span class="food-price">Rs.15000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s3 (1).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt5</h2>
+        <span class="food-price">Rs.65000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+  
+  
+      <div class="food-box">
+        <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+        <h2 class="food-title">Shirt6</h2>
+        <span class="food-price">Rs.65000</span>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <div class="more"><h2>More....</h2></div>
+    <div class="container-m">
+      <div class="more-p">
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.60050</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.5550</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.9990</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.9090</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.15000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.12000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.13000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+        <div class="food-box">
+          <div class="pic"><img src="./images/s1 (1).jpg" class="food-img"></div>
+          <h2 class="food-title">Shirt6</h2>
+          <span class="food-price">Rs.18000</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="less"><h2>Less...</h2></div>
+
+  <div class="bottom" id="about">
+    <div>
+       <img class="b-image" src="./images/s(7).jpg" alt="bottom-image"/>
+    </div>
+    <div>
+        <h3>Quick links</h3>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#shopping">Shopping</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="tel:+918008457750">Contact</a></li>
+        </ul>
+    </div>
+    <div class="b-s">
+      <h3>About us</h3>
+      <p>Creating something exceptional takes a shift of roles and responsibilities. We are grateful to have a team that stands through thick and thin beside the label with endeavour,patience, skill and imagination.</p>
+      <a href="https://www.facebook.com/LabelNurvi"><img src="https://png.pngtree.com/element_our/sm/20180515/sm_5afaf0c36298b.jpg" alt=""/></a>
+      <a href="https://www.instagram.com/LabelNurvi"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt=""/></a>
+      <a href="https://www.youtube.com/results?search_query=label+nurvi"><img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc=w240-h480-rw" alt=""/></a>
+  </div>
+    <div>
+        <h3>Contact</h3>
+        <ul>
+            <li>2-84 buziness Square building hyderabad telangana</li>
+            <li>+918008547740</li>
+            <li>pandu@gmail.com</li>
+        </ul>
+    </div>
+</div>
+<div class="bottom c" style="margin-top: 0;">
+    <p>Copyright @2023 Label Nurvi Boutique Powered By <a href="https://www.thepatternscompany.com/">THE PATTERNS COMPANY</a></p>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="razorpa.js"></script>
+</body>
+</html>
