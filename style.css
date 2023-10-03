@@ -307,7 +307,7 @@ h2.title{
   margin-top: 10px;
   width: 100%;
   display: none;
-  background-color: #f0c275;
+  background-color: rgba(220,213,229,255);
 }
 .container-m.active{
   display: block;
