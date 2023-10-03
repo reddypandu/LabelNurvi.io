@@ -372,10 +372,20 @@ transform: scale(1.5);
 .home-img{
   position: absolute;
   left:40.5%;
-  bottom:13.7%;
-  width:238px;
+  bottom:13%;
+  width:280px;
   height:355px;
   border-radius: 5px;
+}
+@media(max-width:800px){
+  .home-img{
+    position: absolute;
+    left:40.5%;
+    bottom:9%;
+    width:100px;
+    height:150px;
+    border-radius: 5px;
+  }
 }
 
 a img.a1{
